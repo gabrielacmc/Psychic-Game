@@ -4,7 +4,7 @@
     var lives = 10;
     var usedLetters = [];
     
-    var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "t", "u", "v", "w", "x", "y", "z"];
+    var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r","s", "t", "u", "v", "w", "x", "y", "z"];
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
     function reset(){
@@ -53,7 +53,7 @@
                 "<p>Wins: " + wins + "</p>"+
                 "<p>Losses: " + loss + "</p>"+
                 "<p>Chances left: " + lives +"</p>"+
-                "<p>Used letters: " + usedLetters + " <p>";
+                "<p>Used letters: " + usedLetters.join(" ") + " <p>";
             
         document.querySelector("#game").innerHTML = html;
 
